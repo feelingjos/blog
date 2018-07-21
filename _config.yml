@@ -11,8 +11,8 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://kaijun.rocks/hexo-theme-huxblog
-root: /blog/
+url: http://www.feeljblog.com/
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -142,7 +142,8 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: huxblog
+## theme: huxblog
+theme: cafe
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
