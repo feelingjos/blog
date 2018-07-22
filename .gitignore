@@ -41,3 +41,4 @@ jspm_packages
 CNAME
 public
 package-lock.json
+/.idea

@@ -24,15 +24,35 @@
                         </a>
                     </li>
                 <% } %>
-                <% if (config.github_username) { %>
+                <% if (config.gitee_username) { %>
+                <li>
+                    <a target="_blank" href="https://gitee.com/<%= config.gitee_username %>">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-git-square fa-stack-1x fa-inverse"></i>
+                                    </span>
+                    </a>
+                </li>
+                <% } %>
+                    <% if (config.qq_jump_url) { %>
                     <li>
-                        <a target="_blank"  href="https://github.com/<%= config.github_username %>">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                            </span>
+                        <a target="_blank" href="<%= config.qq_jump_url %>">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-qq fa-stack-1x fa-inverse"></i>
+                                        </span>
                         </a>
                     </li>
+                    <% } %>
+                <% if (config.github_username) { %>
+                <li>
+                    <a target="_blank"  href="https://github.com/<%= config.github_username %>">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                    </a>
+                </li>
                 <% } %>
                 <% if (config.jianshu_username) { %>
                     <li>
@@ -92,11 +112,11 @@
                 <p class="copyright text-muted">
                     Copyright &copy; <%= config.title %> <%= new Date().getFullYear() %>
                     <br>
-                    Theme by <a href="http://huangxuan.me">Hux</a>
+                    Theme by <a href="http://feeljblog">feelj</a>
                     <span style="display: inline-block; margin: 0 5px;">
                         <i class="fa fa-heart"></i>
                     </span>
-                    Ported by <a href="https://huyuee.github.io/blog/">huyue</a> |
+                    Ported by <a href="https://gitee.com/feelingjos">feelj</a> |
                     <!-- 项目star和地址 -->
                     <!-- <iframe
                         style="margin-left: 2px; margin-bottom:-5px;"

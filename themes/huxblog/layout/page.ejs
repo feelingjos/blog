@@ -203,7 +203,16 @@ layout: layout
                                     </a>
                                 </li>
                             <% } %>
-
+                            <% if (config.gitee_username) { %>
+                            <li>
+                                <a target="_blank" href="https://gitee.com/<%= config.gitee_username %>">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-git-square fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                </a>
+                            </li>
+                            <% } %>
                             <% if (config.github_username) { %>
                                 <li>
                                     <a target="_blank"  href="https://github.com/<%= config.github_username %>">
@@ -256,7 +265,20 @@ layout: layout
                                     </a>
                                 </li>
                             <% } %>
+                            <% if (config.qq_jump_url) { %>
+                            <li>
+                                <a target="_blank" href="<%= config.qq_jump_url %>">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-qq fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                </a>
+                            </li>
+                            <% } %>
+
+
                             <% if (config.linkedin_username) { %>
+
                                 <li>
                                     <a target="_blank"  href="https://www.linkedin.com/in/<%= config.linkedin_username %>">
                                         <span class="fa-stack fa-lg">
@@ -267,6 +289,13 @@ layout: layout
                                 </li>
                             <% } %>
                         </ul>
+
+                        <% if(config['sidebar-wechar-number']) { %>
+                        <hr><h5><sapn >Follow</sapn></h5>
+                        <img src="<%= config['root'] %><%= config['sidebar-wechar-number'] %>" />
+                        <!-- <img src="<%= config['sidebar-avatar'] %>" /> -->
+                        <% } %>
+
                     </div>
                 </section>
 
@@ -275,7 +304,6 @@ layout: layout
                 <hr>
                 <h5>FRIENDS</h5>
                 <ul class="list-inline">
-
                     <% config.friends.forEach(function(friend){ %>
                         <li><a href="<%= friend.href %>" target="_blank"><%= friend.title %></a></li>
                     <% }); %>

@@ -3,9 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: huyue's Blog
-subtitle: Keep Moving !
-author: huyue
+home: feelj's Blog
+title: Welcome to come feelj's Blog
+subtitle:  on the way !
+author: feelj
 language:
 timezone:
 
@@ -19,22 +20,24 @@ permalink_defaults:
 #Custom Setting Start
 
 # Site settings
-SEOTitle: 古朋的博客 | huyue's Blog
+SEOTitle: feelj | feelj's Blog
 header-img: img/home-bg.jpg
-email: 1062887235@qq.com
+email: feelingjos@163.com
 description: ""
 keyword: ""
 
 
 # SNS settings
 # RSS: false
-weibo_username:     huyuee
-zhihu_username:     huyuee
-github_username:    huyuee
+# weibo_username:     huyuee
+#zhihu_username:     huyuee
+github_username:    feelingjos
 # twitter_username:   huyuee_
 # facebook_username:  huyuee_
-jianshu_username:   2b10ebdd9c0f
+# jianshu_username:   2b10ebdd9c0f
 # linkedin_username:  huyuee
+qq_jump_url: http://wpa.qq.com/msgrd?v=3&uin=1625010024&site=qq&menu=yes
+gitee_username: feelingjos
 
 # Build settings
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
@@ -54,13 +57,14 @@ duoshuo_share: true                     # set to false if you want to use Commen
 ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 # Google Analytics
 ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
+ga_domain: feeljblog
 
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "keep moving!"
-sidebar-avatar: img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "on the way !"
+sidebar-avatar: img/avatar.png      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-wechar-number: img/wechar.jpg
 
 
 # Featured Tags
@@ -70,25 +74,27 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 
 # Friends
 friends: [
+#    {
+#        title: "Kaijun's Blog",
+#        href: "http://blog.kaijun.rocks"
+#    },
     {
-        title: "Kaijun's Blog",
-        href: "http://blog.kaijun.rocks"
-    },{
-        title: "Hux Blog",
+       title: "Hux Blog",
         href: "http://huangxuan.me"
-    },{
-        title: "Foo",
-        href: "#"
-    },{
-        title: "Bar",
-        href: "#"
-    },{
-        title: "Example Friends",
-        href: "#"
-    },{
-        title: "It helps SEO",
-        href: "#"
     }
+#    ,{
+#        title: "Foo",
+#        href: "#"
+#    },{
+#        title: "Bar",
+#        href: "#"
+#    },{
+#        title: "Example Friends",
+#        href: "#"
+#    },{
+#        title: "It helps SEO",
+#        href: "#"
+#    }
 ]
 
 
@@ -142,11 +148,11 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
- theme: huxblog
+theme: huxblog
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/HuYuee/blog
-  branch: gh-pages
+  repo: https://github.com/feelingjos/feelingjos.github.io
+  branch: master
